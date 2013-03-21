@@ -5,17 +5,17 @@ Web Spatial Index project
 ## Authors
 
 * Andrea Barbadoro
-* Andrea Farruggio
+* Andrea Patrizia
 * Francesco Maglia
 * Ilario Maiolo
 * Matteo Cannaviccio
-* Oscar Eijsermans
+* Sara Vagnarelli
 
 ## License
 
 (The MIT License)
 
-Copyright (c) 2013 Andrea Barbadoro, Andrea Farruggio, Francesco Maglia, Ilario Maiolo, Matteo Cannaviccio, Oscar Eijsermans
+Copyright (c) 2013 Andrea Barbadoro, Andrea Patrizia, Francesco Maglia, Ilario Maiolo, Matteo Cannaviccio, Sara Vagnarelli
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
