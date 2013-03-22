@@ -1,0 +1,18 @@
+Cose Da chiedere lunedì
+
+per chi fa grafica: chiarire come si incastra con grafica (non centra molto)
+
+chiarire che applicazione dobbiamo tirare fuori (dove sta la fregatura)
+quale è l'input e quale è l'output?
+	possibile:  input: dataset mongodb
+				output: (shell intorno mongodb?)
+
+				****come si aggancia con gli altri progetti****
+					forse forniamo i dati a webdicom
+						se questo: dataset di esempio
+
+
+quali sono gli step intermedi? python? javascript?
+
+quale è il senso di ATLAS? cosa dobbiamo calcolare?
+
