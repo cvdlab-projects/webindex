@@ -6,6 +6,7 @@ Web Spatial Index project
 
 * Andrea Barbadoro
 * Andrea Patrizio
+* Claudio Pisanu
 * Francesco Maglia
 * Ilario Maiolo
 * Matteo Cannaviccio
@@ -15,7 +16,7 @@ Web Spatial Index project
 
 (The MIT License)
 
-Copyright (c) 2013 Andrea Barbadoro, Andrea Patrizio, Francesco Maglia, Ilario Maiolo, Matteo Cannaviccio, Sara Vagnarelli
+Copyright (c) 2013 Andrea Barbadoro, Andrea Patrizio, Claudio Pisanu, Francesco Maglia, Ilario Maiolo, Matteo Cannaviccio, Sara Vagnarelli
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
