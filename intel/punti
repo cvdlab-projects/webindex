@@ -1,0 +1,30 @@
+	-formato dei dati dati da rappresentare (mesh compressa di triangoli)
+json
+	-installazione e studio mongodb
+	-studio indici spaziali anche disponibili in mongodb
+	-algoritmo di partizionamento del professore (qhull)
+	-algoritmo di partizionamento più classico (hilbert o geohash)
+	-scrittura server
+		javascript (nodejs)
+			+ json nativo
+			+ possibilità di includere codice all'interno del db da eseguire al momento della ricerca
+			- nodejs non lo conosce nessune
+			- basse performance
+			- niente interfaccia verso librerie native (forse)
+		python (??)
+			+ più semplice di nodejs
+			+ possibilita di interfaccia a librerie native
+		java (getty)
+			+ alte performance
+			- tempi di sviluppo lenti, non adatto per la prototipizzazione
+			- al professore gli sta sul cazzo
+	-applicazione per partizionamento dei dati
+
+
+forse 3 task principali
+	scrittura partizionatore qhull
+	scrittura partizionatore classico
+	scrittura ricercatore/pescatore dati
+in comune:
+	studio formato dati
+	studio indici spaziali

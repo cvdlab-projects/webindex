@@ -16,3 +16,39 @@ quali sono gli step intermedi? python? javascript?
 
 quale è il senso di ATLAS? cosa dobbiamo calcolare?
 
+
+		---------
+
+
+input una immagine di volume - triplette di coordinate afferenti a celle estratte dall'immagine (simile a dati geografici, ma a 3 dimensioni) - tocca hackerare gli indici bidimensionale
+
+-reperire insieme di dati di test : una immagine di volume (grossa) e scaricare un database geografico 
+	indicizzare i dati su mongodb - vedere se l'indice di default può essere esteso alle 3 dimensioni  -  controllare che non ci sia già qualche progetto che faccia al caso nostro
+
+(parte del lavoro: approfondire la panoramica sugli indici spaziali) (non siamo legati a mongodb?? - postgres ha indici 3d)
+no, siamo legati a mongodb - è una specifica - contattare gli sviluppatori per avere info sugli indici
+
+vedere qhull su github del professore (scritto in coffescript)
+
+tocca considerare la topologia di celle descritte dai punti (da salvare nel db)
+
+descrizione dei punti, descrizione di celle.
+
+da salvare: Documenti json descrivono un cluster di punti e la topologia. L'indice serve a recuperare efficacemente tutti i documenti correlati
+	insieme di punti associato ad un valore dell'indice e la topologia relativa (rappresentazione complessa binaria delle celle di ordine massimo [fossero dati geografici sarebbero una triangolazione])
+
+	su qhull c'è la possibilità di usare un indice (ma non è necessariamente la possibilità migliore) usa al posto delle coordinate cartesiane *coordinate affini*
+		in qhull ad ogni livello è associata una matrice di traformazione. la matrice di trasformazione associata al documento finale è la moltiplicazione di tutte le matrici di traformazione superiore
+
+	le coordinate affini sono coordinate che soddisfano l'equazione x+y+z=1 (tutti i punti stanno su un piano)
+	le rette con una coordinata =0 definiscono una tassellazione del suddetto piano piano in regioni convesse caratterizzate dal segno delle coordinate dei tre punti dove solo una delle coordinate è =1. i 3 punti costituiscono una base di questo spazio
+
+la matrice di trasformazione da un piano a coordinate globali (cartesiane) deve essere fornita insieme al risultato quella query (il documento json)
+
+Fare uno studio sugli indici spaziali - wikipedia
+
+dare un'occhiata a Visible Human Project
+
+per il formato d'ingresso: descrizione della specifica 
+	poi trasformazione nel sistema di coordinate del partizionamento spaziale 
+
