@@ -2,7 +2,7 @@
 json
 	-installazione e studio mongodb
 	-studio indici spaziali anche disponibili in mongodb
-	-algoritmo di partizionamento del professore (qhull)
+	-algoritmo di partizionamento del professore (qhull/coordinate affini)
 	-algoritmo di partizionamento più classico (hilbert o geohash)
 	-scrittura server
 		javascript (nodejs)
@@ -17,7 +17,6 @@ json
 		java (getty)
 			+ alte performance
 			- tempi di sviluppo lenti, non adatto per la prototipizzazione
-			- al professore gli sta sul cazzo
 	-applicazione per partizionamento dei dati
 
 

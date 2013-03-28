@@ -2,9 +2,6 @@
 % WebIndex
 % Marzo 2013
 
-# Schema Funzionale
-\includegraphics[keepaspectratio,width=\textwidth, height=.8\textheight]{SchemaFunzionale.jpg} 
-
 # Web Spatial Index project
 
 ## Obiettivi
@@ -16,6 +13,9 @@
 ## Autori
 
 Andrea Barbadoro, Andrea Patrizio, Claudio Pisanu, Francesco Maglia, Ilario Maiolo, Matteo Cannaviccio, Sara Vagnarelli
+
+# Schema Funzionale
+\includegraphics[keepaspectratio,width=\textwidth, height=.8\textheight]{SchemaFunzionale.jpg} 
 
 # Task
 
