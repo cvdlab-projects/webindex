@@ -2,6 +2,9 @@
 json
 	-installazione e studio mongodb
 	-studio indici spaziali anche disponibili in mongodb
+
+	-studio formato par per la rappresentazione della topologia e possibili modalità di taglio
+
 	-algoritmo di partizionamento del professore (qhull/coordinate affini)
 	-algoritmo di partizionamento più classico (hilbert o geohash)
 	-scrittura server
