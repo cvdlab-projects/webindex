@@ -4,6 +4,8 @@ json
 	-studio indici spaziali anche disponibili in mongodb
 
 	-studio formato par per la rappresentazione della topologia e possibili modalità di taglio
+		[array di vertici e triplette di connessione delle faccette di ordine massimo]
+
 
 	-algoritmo di partizionamento del professore (qhull/coordinate affini)
 	-algoritmo di partizionamento più classico (hilbert o geohash)
@@ -22,6 +24,9 @@ json
 			- tempi di sviluppo lenti, non adatto per la prototipizzazione
 	-applicazione per partizionamento dei dati
 
+Riferimento:
+	mongohq per database su server esterno
+
 
 forse 3 task principali
 	scrittura partizionatore qhull
@@ -29,4 +34,5 @@ forse 3 task principali
 	scrittura ricercatore/pescatore dati
 in comune:
 	studio formato dati
+		[matrice di trasformazione in coordinate globali, array di punti e metadati associati, mappa di rappresentazione topologia di ordine massimo]
 	studio indici spaziali
