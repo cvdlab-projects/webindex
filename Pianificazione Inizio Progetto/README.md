@@ -24,4 +24,4 @@
 - Integrazione Codice
     - Andrea Barbardoro
 - Contatto esterno al gruppo
-    - Francesco Maria aglia
+    - Francesco Maria Maglia

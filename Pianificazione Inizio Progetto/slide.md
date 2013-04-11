@@ -2,6 +2,9 @@
 % WebIndex
 % Marzo 2013
 
+# WebIndex
+\includegraphics[keepaspectratio,width=\textwidth, height=.8\textheight]{SchemaIO.png} 
+
 # Web Spatial Index project
 
 ## Obiettivi
@@ -26,8 +29,22 @@ Andrea Barbadoro, Andrea Patrizio, Claudio Pisanu, Francesco Maglia, Ilario Maio
 
 ## Indipendenti:
 - Partizionatore per Coordinate Affini
-    - Andrea Barbadoro, Claudio Pisanu, Ilario Maiolo
+    - Andrea Barbadoro,
+    	- streaming big document su applicazione Python e webapplicazion a service python
+    - Claudio Pisanu
+    	- trasfromazione stream a spatial cluster json 
 - Partizionatore Classico
-    - Andrea Patrizio, Francesco Maglia
+    - Andrea Patrizio
+    	- applicazione python di segmentazione e webapplication a service python
 - Libreria recupero documenti
-    - Matteo Cannaviccio, Sara Vagnarelli
+    - Sara Vagnarelli
+    	- Server Python
+    	- libreria js
+- Visualizzatore Albero dei documenti in MongoDB
+	- Ilario Maiolo
+		- Creazione albero di relazione cluster spaziali 
+	- Matteo Cannaviccio
+		- web interface js di navigazione albero
+- Visualizzatore Cluster dei punti in output
+	- Francesco Maglia
+		- web interface js di visualizzazione cluster
