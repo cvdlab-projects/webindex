@@ -1,4 +1,5 @@
 Cluster -> {
+	"id" : "clusterId", //codice univoco che identifica il cluster
 	"transMatrix" : [[],[],[],…], //matrice di trasformazione del cluster
 	"cells": [{Cell_1},{Cell_2},{Cell_3},…,{Cell_N}], //Tutte le celle contenute nel cluster (celle descritte sotto)
 }
@@ -11,7 +12,7 @@ Cell -> {
 	//…altri attributi comuni a tutta la cella
 
 	"vertices":[[],[],…], //i vertici che compongono la cella
-	"clusters":[[],[],[],…] //CAMPO OPZIONALE, da riempire solo se la cella si trova su + clusters
+	"clusters":[clusterId_1,clusterId_2,…] //CAMPO OPZIONALE, da riempire solo se la cella si trova su + clusters
 						//In caso la cella si trovi su un solo cluster, il campo va lasciato vuoto
 						//dato che la cella, essendo contenuta nel json del cluster, la sua posizione
 						//è scontata.
