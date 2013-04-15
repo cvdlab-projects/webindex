@@ -59,3 +59,31 @@ InterDomain_Cluster mod A-> {
 	]; //max order cells. for a 3d model each face is composed of 4 veritices
 
 }
+
+
+example of a valid cluster, describing a tetrahedron
+{
+	"id": "0000001";
+	"type": "cluster"; 
+	"vertices_transformation": [[1.0,  0,  0,  0],
+	 							[  0,1.0,  0,  0],
+	 							[  0,  0,1.0,  0],
+	 							[  0,  0,  0,1.0]];
+	"vertices":[
+				[ 2., 2., 2.],
+    			[−2.,−2., 2.],
+    			[−2., 2.,−2.],
+   				[ 2.,−2.,−2.]
+			];
+	"v_attributes":[
+				[0.5, 0.8],
+				[28.44, 3.],
+				[28.44, 3.],
+				[3.4, 0.]
+			];
+	"cells":[
+				[0, 1, 2, 3, 4]
+			];
+	"adjacent_clusters": []; 
+	"interdomain_clusters": []
+}
