@@ -8,7 +8,7 @@ Cluster -> {
 
 Cell -> {
 	"color" : "Red", //suppongo che tutti i punti della stessa cella abbiano lo stesso colore, quindi lo definisco una sola volta
-	"densità" : …, //come sopra
+	"density" : …, //come sopra
 	//…altri attributi comuni a tutta la cella
 
 	"vertices":[[],[],…], //i vertici che compongono la cella
