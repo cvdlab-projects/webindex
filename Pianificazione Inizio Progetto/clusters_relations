@@ -1,0 +1,4 @@
+Clusters's Relationships -> {
+	"id": "cluster_tree";
+	"tree": //recursively: tree:= leaf | '[' tree* ']' ; leaf:= cluster id  
+}
