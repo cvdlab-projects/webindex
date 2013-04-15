@@ -1,0 +1,25 @@
+Cluster -> {
+	"transMatrix" : [[],[],[],…], //matrice di trasformazione del cluster
+	"cells": [{Cell_1},{Cell_2},{Cell_3},…,{Cell_N}], //Tutte le celle contenute nel cluster (celle descritte sotto)
+}
+
+
+
+Cell -> {
+	"color" : "Red", //suppongo che tutti i punti della stessa cella abbiano lo stesso colore, quindi lo definisco una sola volta
+	"densità" : …, //come sopra
+	//…altri attributi comuni a tutta la cella
+
+	"vertices":[[],[],…], //i vertici che compongono la cella
+	"clusters":[[],[],[],…] //CAMPO OPZIONALE, da riempire solo se la cella si trova su + clusters
+						//In caso la cella si trovi su un solo cluster, il campo va lasciato vuoto
+						//dato che la cella, essendo contenuta nel json del cluster, la sua posizione
+						//è scontata.
+}
+	
+
+
+
+
+
+
