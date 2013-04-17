@@ -31,5 +31,5 @@ ex. "vertices":[
    				[ 2.,−2.,−2.]
 		]
 
-To obtain the spatial transformation (from local coordinates to global) 
+The spatial transformation (from local coordinates to global) is performed through the multiplication between every vertex with a matrix representing the spatial transformation. This information is stored in the field "vertices_transformation".
 
