@@ -8,7 +8,7 @@
 
 - - -
 
-![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/slides%20Ilario%20Maiolo/immagine_sommario.png)
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/immagine_sommario.png)
 
 - - -
 
@@ -19,7 +19,7 @@
 
 #Solution:
 
-![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/slides%20Ilario%20Maiolo/image_final.png)	
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/image_final.png)	
 
 ###1,2,3... in the image above represent the CLUSTER_ID.
 
