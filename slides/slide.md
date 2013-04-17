@@ -5,14 +5,20 @@
 
 ![schema funzionale](SchemaWebIndex.png "schema funzionale")
 
+##
+
 * A partire da un grosso modello, partizionarlo in cluster di punti
 * Salvataggio dei cluster su MongoDB attraverso file JSON
 * Definizione di una funzione di retrieve
 
 ## Utilizzo di tecniche Geohash
 
-immagini
+![geohash](geohash.png "geohash")
+![quadtree](quadtree.png "quadtree")
+![geohash-query](geohash-query.png "geohash-query")
 
 ## Utilizzo delle curve di Hilbert
 
-immagini
+![hilbert_curve](hilbert_curve.png "hilbert_curve")
+![hilbert3d-o1](hilbert3d-o1.png "hilbert3d-o1")
+![hilbert3d-o2](hilbert3d-o2.png "hilbert3d-o2")
