@@ -1,6 +1,15 @@
 # webindex
 
-Web Spatial Index project 
+## Web Spatial Index project 
+
+![Schema](https://raw.github.com/cvdlab-bio/webindex/master/Pianificazione%20Inizio%20Progetto/SchemaIO.jpg)
+
+## A Dimension Agnostic Space Partitioner
+
+- Analysis of major approaches to spatial indexing of large point data-sets
+- JSON paging of large geometric datasets using MongoDB
+
+[System Objects](https://github.com/cvdlab-bio/webindex/blob/master/Pianificazione%20Inizio%20Progetto/json_data_objects.definition.md)
 
 ## Authors
 
