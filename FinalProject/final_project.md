@@ -24,10 +24,9 @@ Input:
 
 Output:
 
-
 A file that represent the points of the model.
-This file has, for all the slice (or image) of the model, a binary matrix.
-If the model has N images than the file has N matrix.
+This file has, for each slice (or image) of the model, a binary matrix.
+If the model has N images than the file has N matrixes.
 For the z-matrix there is a 1 in the y-row at the position x, only if there is a point in the coordinate (x,y,z) in the model.
 Each slice is separeted by a comment.
 
