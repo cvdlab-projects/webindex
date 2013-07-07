@@ -13,7 +13,7 @@ Big problems:
 
 ##First task: Extract points
 Precondition:
-* The model is represented by a set of images (with extention .png)
+* The model is represented by a set of images (with extension .png)
 * The images are in a sequence order (e.g. from "slice0.png" to "slice100.png")
 
 Input:
@@ -22,7 +22,7 @@ Input:
 * Destination file
 * One image for the kmeans algorithm
 
-Output:
+Output:\n
 A file that represent the points of the model.
 This file has, for all the slice (or image) of the model, a binary matrix.
 If the model has N images than the file has N matrix.
@@ -163,7 +163,7 @@ The following image explane the process of the algorithm:
 ![Partitioner](https://raw.github.com/cvdlab-bio/webindex/patrizio_dev_branch/FinalProject/Partitioner.png)
 
 High level algorithm:
-
+	Calculate the minimum set of clusters (dipending on memory usage)
 
  
  
