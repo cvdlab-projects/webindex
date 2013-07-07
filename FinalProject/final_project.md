@@ -20,7 +20,7 @@ Input:
 * Number of images
 * Source directory (in which the images are saved)
 * Destination file
-* One image for the kmeans algorithm
+* One image for generate the centroid (background, foreground)
 
 Output:
 
@@ -35,7 +35,7 @@ The following image explane the process of the algorithm:
 
 High level algorithm:
 
-    Generate the centroid (background, foreground) for the model
+    Generate the centroid for the model
     For each image:
         Load the png image
         Make a quantization of the points (using the centroid)
@@ -147,6 +147,10 @@ Python algorithm:
         
     print "\nFINISH!"
 
+Notes:
+* The centroid is generated using the [kmeans algorithm](http://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.vq.kmeans.html#scipy.cluster.vq.kmeans)
+* For each slice is applied a [median filter](http://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.filters.median_filter.html) and a [quantization](http://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.vq.vq.html#scipy.cluster.vq.vq)
+
 ##Second task: The partitioner
 Precondition:
 * After the extraction, the points of the model are saved in a file and re-writed for optimization (see Sara Vagnarelli's [page](https://github.com/cvdlab-bio/webindex/blob/vagnarelli_dev_branch/README.md)).
@@ -159,7 +163,7 @@ Input:
 
 Output:
 * Clusters of points saved on MongoDB
-* The model-three of the partition
+* The model-three of the partition (for visualization, see Ilario Maiolo's [page](https://github.com/cvdlab-bio/webindex/blob/maiolo_dev_branch/Maiolo/2013-04-18/maiolo.md))
 * Some information as clusters created and the biggest/smaller cluster
 
 The following image explane the process of the algorithm:
@@ -520,6 +524,3 @@ Python algorithm:
 Notes:
 * The model-tree is created at the beginning of the algorithm and updates at cluster creation
 * The cluster are saved in group on MongoDB (for efficiency)
-
-
-    
