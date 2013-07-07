@@ -22,7 +22,7 @@ Input:
 * Destination file
 * One image for the kmeans algorithm
 
-Output:\n
+Output:
 A file that represent the points of the model.
 This file has, for all the slice (or image) of the model, a binary matrix.
 If the model has N images than the file has N matrix.
