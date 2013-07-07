@@ -34,6 +34,7 @@ The following image explane the process of the algorithm:
 ![Model2slices](https://raw.github.com/cvdlab-bio/webindex/patrizio_dev_branch/FinalProject/Model2slices.png)
 
 High level algorithm:
+
     Generate the centroid (background, foreground) for the model
     For each image:
         load the png image
