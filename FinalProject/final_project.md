@@ -38,10 +38,11 @@ High level algorithm:
     Generate the centroid (background, foreground) for the model
     For each image:
         load the png image
-	make a quantization of the points (using the centroid)
-	save the slice in the output file
+        make a quantization of the points (using the centroid)
+        save the slice in the output file
 
 Python algorithm:
+
     from time import time
     from scipy import *
     import numpy as np
