@@ -7,7 +7,7 @@ Create a partioner for a 3D model.
 The partitioner must divide the model in clusters of points.
 The clusters are saved on MongoDB.
 
-Big problems:
+Problems:
 * Extract points from a set of png images (that represent the 3D model)
 * Run the partitioner on this set of points
 
@@ -163,8 +163,8 @@ Input:
 
 Output:
 * Clusters of points saved on MongoDB
-* The model-three of the partition (for visualization, see Ilario Maiolo's [page](https://github.com/cvdlab-bio/webindex/blob/maiolo_dev_branch/Maiolo/2013-04-18/maiolo.md))
-* Some information as clusters created and the biggest/smaller cluster
+* The model-three of the partition (see Ilario Maiolo's [page](https://github.com/cvdlab-bio/webindex/blob/maiolo_dev_branch/Maiolo/2013-04-18/maiolo.md))
+* Some information as the number of clusters created and the biggest/smaller cluster
 
 The following image explane the process of the algorithm:
 ![Partitioner](https://raw.github.com/cvdlab-bio/webindex/patrizio_dev_branch/FinalProject/Partitioner.png)
