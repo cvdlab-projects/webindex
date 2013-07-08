@@ -33,11 +33,11 @@
 	
 - - -
 #Solution First Step:
-	1)Create a function to retrieve a json document using MongoDb.
-	![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/ajax.jpg)
-	For the first point I developed a function that through an ajax request at mongodb rest interface recovers the json document (the document describes the model partitioned)	
+1)Create a function to retrieve a json document using MongoDb.
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/ajax.jpg)
+For the first point I developed a function that through an ajax request at mongodb rest interface recovers the json document (the document describes the model partitioned)	
 	
-	##Function:
+##Function:
 	'$(function () {
         function retriveJsonDocument() {
 		clearDivResult(); //this function cleans the div that contains the image of the tree
@@ -131,123 +131,15 @@
 
 }
 
-var over = false;
-function printElement(clusterTree, xNewCord, yNewCord, xOldCord, yOldCord, space2Draw, type, id, name, description,haFigli,isUltimo) {
-    //Mi sposto a sx dal padre che mi ha chiamato (deve essere uguale tra le due funzioni)
-    var newXCoordinates = xNewCord - 80;
-    var newYCoordinates = yNewCord + 80;
 
 
-    st = space2Draw.set();
-    var a;
-            st.push(
-                 a = space2Draw.circle(newXCoordinates, newYCoordinates, 15).click((function (clusterTree) {
-                     return function () {
-                         window.open("index-point.html?id=" + (clusterTree) + "&type=" + type + "&description=" + description + "&name=" + name);
-                     }
-                 }(clusterTree))).mouseover(function () {
-                     this.attr({ 'cursor': 'pointer' });
-                     this.attr({ 'opacity': '.50' });
-                 }).mouseout(function () {
-                     this.attr({ 'opacity': '1' });
-                 })
-
-                        );
-
-    //draw the arch and the id of the cluster
-            var testoTroncato = convertValue(clusterTree);
-
-            LineRoot(xOldCord, yOldCord, newXCoordinates, newYCoordinates, space2Draw)
-          var d=  space2Draw.text(newXCoordinates, newYCoordinates, testoTroncato).attr({ fill: "white" }).mouseover(function (clusterTree) {
-               return function () {
-                   var tip = $("#tooltip");
-                   tip.show();
-                   addTip(d.node,tip);
-                   $(document).mousemove(function (e) {
-                       if (over) {
-                           tip.css("left", e.clientX + 20).css("top", e.clientY + 20);
-                           tip.text(clusterTree + "");
-                       }
-                   });
-                }
-            }(clusterTree));
-            st.attr({ fill: "red" });
-            if (haFigli === true && isUltimo) {
-
-                newXCoordinates += 300;
-
-            } else {
-
-                newXCoordinates += 112;
-            }
-
-            var coordinatesOutput = [newXCoordinates, yOldCord, xOldCord];
-
-      return coordinatesOutput;
 
 
-}
-
-function printUnderTree(clusterTree, xNewCord, yNewCord, xOldCord, yOldCord, space2Draw, type, id, name, description, haFigli, isUltimo) {
-    //Mi sposto a sx dal padre che mi ha chiamato (deve essere uguale tra le due funzioni)
-    var newXCoordinates = xNewCord - 80;
-    var newYCoordinates = yNewCord + 80;
-
-    space2Draw.circle(newXCoordinates, newYCoordinates, 15).attr({ fill: "white" });;
-    LineRoot(xOldCord, yOldCord, newXCoordinates, newYCoordinates, space2Draw);
-    space2Draw.text(newXCoordinates, newYCoordinates, "level");
-
-
-    var xOldCord = newXCoordinates;
-    var yOldCord = newYCoordinates;
-
-    for (var i = 0; i < clusterTree.length;i++){
-        if (typeof (clusterTree[i]) === "string") {
-            if (i === (clusterTree.length-1)) {
-                isUltimo = true;
-            }
-            var coordElement = printElement(clusterTree[i], newXCoordinates, newYCoordinates, xOldCord, yOldCord, space2Draw, type, id, name, description, haFigli,isUltimo);
-            newXCoordinates = coordElement[0];
-            newYCoordinates = coordElement[1];
-            xOldCord = coordElement[2];
-
-        } else {
-           
-            haFigli = true;
-            var coord = printUnderTree(clusterTree[i], newXCoordinates, newYCoordinates, xOldCord, yOldCord, space2Draw, type, id, name, description, haFigli, isUltimo);
-            newXCoordinates = coord;
-        }
-    
-    
-    }
-
-    return newXCoordinates+100;
-
-
-}
-
-
-function printRoot(space2Draw) {
-    //Return the x and y coordinates of the root
-    var coordinates = [250, 25];
-
-    var xRadice = 250;
-    var yRadice = 25;
-
-    //Print the root
-    space2Draw.circle(xRadice, yRadice, 15).attr({ fill: "white" });
-    space2Draw.text(xRadice, yRadice, "root");
-
-    return coordinates;
-
-
-}'
-
-	2)Display the CLUSTER_ID on the tree
-	![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/simple.png)
-	In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
+2)Display the CLUSTER_ID on the tree
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/simple.png)
+In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
 	
-	##Function:
+##Function:
 	
 	'function addTip(node, tip) {
   
@@ -258,8 +150,8 @@ function printRoot(space2Draw) {
         tip.fadeOut(10);
         over = false;
     });
-}
-function convertValue(value,from,to) {
+    }
+    function convertValue(value,from,to) {
     if (typeof(from)==="undefined" && typeof (to)=== "undefined") {
         var valueLength = value.length;
         return value.substring(valueLength - 3, valueLength);
@@ -270,4 +162,4 @@ function convertValue(value,from,to) {
         return value.substring(valueLength - from, valueLength-to);
 
         }
-}'
+      }'
