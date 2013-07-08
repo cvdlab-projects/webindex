@@ -30,6 +30,7 @@
 ##Second Step:
 	1)Create a tree representation of an image using javascript.
 	2)Display the CLUSTER_ID on the tree
+	
 - - -
 #Solution First Step:
 	1)Create a function to retrieve a json document using MongoDb.
@@ -71,8 +72,8 @@
              }
          });
      }); 
-}
-'
+}'
+
 ---
 
 #Solution Second Step:
@@ -240,13 +241,14 @@ function printRoot(space2Draw) {
     return coordinates;
 
 
-}
-'
+}'
 
 	2)Display the CLUSTER_ID on the tree
 	![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/simple.png)
 	In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
+	
 	##Function:
+	
 	'function addTip(node, tip) {
   
     $(node).mouseenter(function () {
