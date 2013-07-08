@@ -149,7 +149,7 @@ Python algorithm:
 
 Notes:
 * The centroid is generated using the [kmeans algorithm](http://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.vq.kmeans.html#scipy.cluster.vq.kmeans)
-* For each slice is applied a [median filter](http://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.filters.median_filter.html) and a [quantization](http://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.vq.vq.html#scipy.cluster.vq.vq)
+* To each slice is applied a [median filter](http://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.filters.median_filter.html) and a [quantization](http://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.vq.vq.html#scipy.cluster.vq.vq)
 
 ##Second task: The partitioner
 Precondition:
@@ -522,5 +522,5 @@ Python algorithm:
     print "avg points per cluster:", tot_points/(docs-1) #-1: the tree of the model
 
 Notes:
-* The model-tree is created at the beginning of the algorithm and updates at cluster creation
-* The cluster are saved in group on MongoDB (for efficiency)
+* The model-tree is created at the beginning of the algorithm and updated at the cluster creation
+* The clusters are saved in group on MongoDB (for efficiency)
