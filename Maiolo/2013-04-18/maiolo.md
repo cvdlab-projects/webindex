@@ -72,6 +72,7 @@
          });
      }); 
 }
+'
 ---
 
 #Solution Second Step:
@@ -239,7 +240,8 @@ function printRoot(space2Draw) {
     return coordinates;
 
 
-}'
+}
+'
 
 	2)Display the CLUSTER_ID on the tree
 	![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/simple.png)
@@ -266,8 +268,4 @@ function convertValue(value,from,to) {
         return value.substring(valueLength - from, valueLength-to);
 
         }
-}
-
-
-
-'
+}'
