@@ -22,7 +22,7 @@
 ![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/image_final.png)	
 
 ###1,2,3... in the image above represent the CLUSTER_ID.
-
+---
 ##First Step:
 	1)Create a function to retrieve a json document using MongoDb.
 	 
