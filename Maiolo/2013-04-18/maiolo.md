@@ -309,3 +309,7 @@
 
 			}
 		}
+---
+##Screenshot of result:
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/result1.JPG)	
+
