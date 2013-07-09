@@ -33,10 +33,14 @@
 	
 - - -
 #Solution First Step:
-1)Create a function to retrieve a json document using MongoDb.
-For the first point I developed a function that through an ajax request at mongodb rest interface recovers the json document (the document describes the model partitioned)	
+
+	1)Create a function to retrieve a json document using MongoDb.
+	
+	For the first point I developed a function that through an ajax request at mongodb rest interface recovers the json document (the document describes the model partitioned)	
+
 ---	
 ##Function:
+	
 	$(function () {
         function retriveJsonDocument() {
 		clearDivResult(); //this function cleans the div that contains the image of the tree
@@ -47,7 +51,6 @@ For the first point I developed a function that through an ajax request at mongo
              dataType: 'jsonp',
              jsonp: 'jsonp', // mongod is expecting the parameter name to be called "jsonp"
              success: function (data) {
-                 
 				 //if the document doesn't exist launch an alert
                  if (typeof (data["rows"][0]) === "undefined") {
                      alert("doesn't exist a model with id : " + value)
@@ -77,15 +80,14 @@ For the first point I developed a function that through an ajax request at mongo
 
 #Solution Second Step:
 	
-1)Create a tree representation of an image using javascript.
-For the creation of the tree i have chosen the raphaeljs library and i have developed a recursive algorith to iterate each node after the partion
-
+	1)Create a tree representation of an image using javascript.
+	
+	For the creation of the tree i have chosen the raphaeljs library and i have developed a recursive algorith to iterate each node after the partion
 
 
 ---
 
 ##Function:
-	
 	function createTree(clusterTree, type, description, id, name) {
 		//Space in which i want to draw 
 		var divResult = document.getElementById('printResult');
@@ -133,11 +135,11 @@ For the creation of the tree i have chosen the raphaeljs library and i have deve
 
 
 
+---
 
+	2)Display the CLUSTER_ID on the tree
 
-2)Display the CLUSTER_ID on the tree
-
-In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
+	In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
 
 ---
 ##Function:
