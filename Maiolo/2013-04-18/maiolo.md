@@ -34,9 +34,11 @@
 - - -
 #Solution First Step:
 1)Create a function to retrieve a json document using MongoDb.
+
 ![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/ajax.jpg)
+
 For the first point I developed a function that through an ajax request at mongodb rest interface recovers the json document (the document describes the model partitioned)	
-	
+---	
 ##Function:
 	'$(function () {
         function retriveJsonDocument() {
@@ -77,10 +79,13 @@ For the first point I developed a function that through an ajax request at mongo
 ---
 
 #Solution Second Step:
-	1)Create a tree representation of an image using javascript.
-	![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/raphael.jpg)
-	For the creation of the tree i have chosen the raphaeljs library and i have developed a recursive algorith to iterate each node after the partion
-	##Function:
+	
+1)Create a tree representation of an image using javascript.
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/raphael.jpg)
+For the creation of the tree i have chosen the raphaeljs library and i have developed a recursive algorith to iterate each node after the partion
+---
+
+##Function:
 	
 	'function createTree(clusterTree, type, description, id, name) {
 
@@ -138,9 +143,8 @@ For the first point I developed a function that through an ajax request at mongo
 2)Display the CLUSTER_ID on the tree
 ![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/simple.png)
 In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
-	
+---
 ##Function:
-	
 	'function addTip(node, tip) {
   
     $(node).mouseenter(function () {
