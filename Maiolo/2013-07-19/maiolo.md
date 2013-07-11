@@ -34,7 +34,7 @@
 - - -
 #Architecture:
 
-![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-07-19/image_final.png)	
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-07-1/architettura.png)	
 
 - - -
 #Solution First Step:
