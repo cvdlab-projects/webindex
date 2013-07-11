@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+<title>Home</title>
+<link href="styles/Bihomedic/home.css" rel="stylesheet" type="text/css" media="all" />
+<link href="bihomed_files/css3menu1/styles.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="styles/console/codemirror.css">
+<link rel="stylesheet" href="styles/console/console.css">
+<link rel="stylesheet" href="styles/console/show-hint.css">
+<script src="js/console/codemirror.js"></script>
+<script src="js/console/console_script.js"></script>
+
+<!--Javascript and coffeescript modes-->
+<script src="js/console/javascript.js"></script>
+<script src="js/console/coffeescript.js"></script>
+<script src="js/console/loadmode.js"></script>
+
+<!--Hint-->
+<script src="js/console/show-hint.js"></script>
+<script src="js/console/javascript-hint.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/kinetic-v4.4.3.min.js"></script>
+<script type="text/javascript" src="http:////ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- script plasm -->
+<script src="support/jquery.js"></script>
+<script src="support/mustache.js"></script>
+<script src="support/numeric.js"></script>
+<script src="support/director.js"></script>
+<script src="support/three.js"></script>
+<script src="support/three-detector.js"></script>
+<script src="support/three-frame.js"></script>
+<script src="support/three-stats.js"></script>
+<script src="support/three-trackball.js"></script>
+<script src="node_modules/simplexn.js/lib/simplexn.js"></script>
+<script src="node_modules/f.js/lib/f.js"></script> 
+<script src="lib/plasm.js"></script>
+<script src="lib/plasm-fun.js"></script>
+<script src="lib/plasm-env.js"></script>
+</head>
+<body onLoad="showmolecole()">
+<!-- header web-index -->
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a>Lar-Biomed app</a></h1>
+		</div>
+		<nav>
+<ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="#" style="height:48px;line-height:48px;"><span><img src="bihomed_files/css3menu1/samples2.png" alt=""/>MENU'</span></a>
+	<ul>
+		<li class="subfirst"><a href="#" >HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+	<li class="toplast"><a href="#" style="height:48px;line-height:48px;"><span><img src="bihomed_files/css3menu1/bservice.png" alt=""/>PROJECTS</span></a>
+
+
+	<ul>
+		<li class="subfirst"><a id="index" href="Web-index.html">WEB-INDEX</a></li>
+		<li><a id="dicom"href="Web-dicom.html">WEB-DICOM</a></li>
+		<li><a id="lar" href="Web-lar.html">WEB-LAR</a></li>
+		
+	</ul>
+</ul>
+		</nav>
+	</div>
+</div>
+<!-- fine header -->
+
+<!-- inizio context -->
+
+
+<div id="wrapper">		
+	<div id="plasm"><!-- qui ti crea plasm.js al caricamento della pagina -->
+
+</div>
+	<ul>
+		<p style="float:left">
+		<input id="showConsole" type="button" value="OpenConsole" onclick="toggleConsole();" >
+		</p>
+		<p align="center">	
+		<a href="Web-index.html" class="buttons">Web-Index</a>
+		<a href="Web-dicom.html" class="buttons">Web-Dicom</a>
+		<a href="Web-lar.html" class="buttons">Web-Lar</a>
+		</p>
+		
+	</ul>
+
+				
+</div>
+<!-- fine context -->
+		<div id="consl" style="display:none">  
+			<form><textarea id="code" name="code">
+				//Write Here
+			</textarea></form>
+
+			<input id="exec" type="button" value="Exec" onclick="exec();"/>
+			<input id="coffeeScriptButton" type="button" value="CoffeeScript" onclick="coffeeMode();"/>
+			<input id="javaScriptButton" type="button" value="JavaScript" style="display:none" onclick="javascriptMode();">
+			<input id="undo" type="button" value="Undo" onclick=""/>
+			<input id="verify" type="button" value="Verify" onclick="test();"/>
+		</div>
+	
+
+<!-- footer start-->
+	<div id="footer">
+		Copyright (c) 2013</div>
+<!-- footer end-->
+
+
+ <script>
+                /*Testing var*/
+    var csb = document.getElementById("coffeeScriptButton");
+    var jsb = document.getElementById("javaScriptButton");
+    
+            /*Loading CodeMirror on existing textArea*/
+            
+            var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+                mode: "javascript",
+                lineNumbers: true,
+                extraKeys: {"Cmd-Space": "autocomplete"},   //extrakey for autocomplete
+                tabMode: "indent"                           
+            });
+           
+        </script>
+
+ </body>
+</html>

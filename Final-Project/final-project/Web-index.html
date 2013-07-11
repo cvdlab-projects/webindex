@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+	<title>Web</title>
+
+	<link href="styles/Web-index/web_index.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript"  src = "js/jquery-1.9.1.js"></script>
+	<script type="text/javascript"  src="js/web_index/find.js"></script>
+	<script type="text/javascript"  src="js/web_index/createTree.js"></script>
+	<script type="text/javascript"  src="js/web_index/raphael-min.js"></script>
+	<script type="text/javascript"  src="js/web_index/createLineChildren.js"></script>
+	<script type="text/javascript"  src="js/web_index/createLineRoot.js"></script>
+	<script type="text/javascript"  src="js/web_index/retrieveAll.js"></script>
+    <script type="text/javascript"  src="js/web_index/tooltip.js"></script>
+	<script src="js/web_index/webIndex-env.js"></script>	
+	<link rel="stylesheet" href="styles/console/codemirror.css">
+	<link rel="stylesheet" href="styles/console/console.css">
+	<link rel="stylesheet" href="styles/console/show-hint.css">
+	<script src="js/console/codemirror.js"></script>
+	<script src="js/console/console_script.js"></script>
+
+	<!--Javascript and coffeescript modes-->
+	<script src="js/console/javascript.js"></script>
+	<script src="js/console/coffeescript.js"></script>
+	<script src="js/console/loadmode.js"></script>
+ 
+	<!--Hint-->
+	<script src="js/console/show-hint.js"></script>
+	<script src="js/console/javascript-hint.js"></script>
+
+  
+    <script>
+
+        
+
+        function hideTooltip() {
+
+            $("#tooltip").hide();
+           
+
+        }
+
+    
+
+
+    </script>
+
+    <script>
+        
+</script>
+
+<style>
+             * {
+                padding : 0;
+                margin  : 0;            
+            }
+            
+            html, body {
+                height  : 100%;
+            }
+
+
+
+
+    body {
+  
+   
+
+    }
+                
+           
+
+    .search {
+                position    : absolute;
+                bottom      : 0;
+                height      : 40px;
+                width       : 100%;
+                background  : #fff;
+
+    
+    
+    }
+       
+        #tooltip {
+            position: absolute;
+            border: 1px solid gray;
+            background-color: #efefef;
+            padding: 3px;
+            z-index: 1000;
+            /* set this to create word wrap */
+            max-width: 200px;
+        }
+</style>
+
+</head> 
+<body id="webindex" style="overflow:hidden" onload="hideTooltip()">
+    <div id="page-wrapper">
+    <div id="page">
+     <div id="tooltip">
+
+        </div>
+    
+    <div id="printResult">
+
+
+    </div>
+      </div>
+        </div>
+    <div id="search" class="search">
+
+         <input id="inputModelId" type="text" />
+         <input id="searchButton" type="button" value="search" onclick="retriveJsonDocument()"/></div>
+
+   
+
+ </body>
+</html>

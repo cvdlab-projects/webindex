@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>WebVisual</title>
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>	
+	<script type="text/javascript" src="main.js"></script>		
+</head>
+
+<body id="editor">
+
+<!-- WEB-DICOM-->
+
+	<section id="project1" style="display:none">
+    <body>
+<link href="myCss/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="myCss/custom.css" rel="stylesheet" type="text/css" media="all" />
+<link href="myCss/liquidcarousel.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="main.js"></script>    
+<!-- script plasm -->
+<script src="support/jquery.js"></script>
+<script src="support/mustache.js"></script>
+<script src="support/numeric.js"></script>
+<script src="support/director.js"></script>
+<script src="support/three.js"></script>
+<script src="support/three-detector.js"></script>
+<script src="support/three-frame.js"></script>
+<script src="support/three-stats.js"></script>
+<script src="support/three-trackball.js"></script>
+<script src="node_modules/simplexn.js/lib/simplexn.js"></script>
+<script src="node_modules/f.js/lib/f.js"></script> 
+<script src="lib/plasm.js"></script>
+<script src="lib/plasm-fun.js"></script>
+<script src="lib/plasm-env.js"></script>
+
+
+
+  <script>
+    var p;
+    $(function () {
+      console.log('Starting PLaSM...');
+      p = new Plasm('plasm', 'plasm-inspector');
+      fun.PLASM(p);
+    });
+  </script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30496335-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = 'http://www.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <!-- fine plasm -->
+
+<script type="text/javascript" src="myJS/cubo.js"></script>
+<script type="text/javascript" src="myJS/jquery.liquidcarousel.js"></script>
+
+<!-- header -->
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Web Dicom</a>
+    <ul class="nav">
+      <li class="active"><a href="bihomed.html"><b>Home</b></a></li>
+      <li><a href="#"><b>About</b></a></li>
+      <li><a href="#"><b>Contact</b></a></li>
+    </ul>
+  </div>
+</div>
+<!-- fine header -->
+
+<!-- inizio context -->
+ <div class="container-fluid">
+ <div class="row-fluid">
+	<div class="span4">
+		<input type="file"  href="#" id="upload-image"></input>		
+	</div>
+	<div class="span4">
+		<button class="btn" id="seg-image">Segmenta</button>
+	</div>
+	<div class="span4">
+		<button class="btn" id="blo-image">Scomponi a blocchi</button>
+	</div>
+</div>
+
+<br>
+
+<div class="row-fluid">
+	<div class="span4 preview img-rounded" id="original">
+		<img id="original-image" src=""/>
+	</div>
+	<div class="span4 preview img-rounded" id="segment">
+		<img id="segment-image" src=""/>
+	</div>
+	<div class="span4 preview img-rounded" id ="block">
+		<img id="block-image" src=""/>
+	</div>
+</div>
+
+<br>
+<div id="container-liquid">
+<div id="liquid" class="liquid">
+	<span class="previous"></span>
+	<div class="wrapper">
+		<ul class="image-scroll">
+			
+		</ul>
+
+	
+	</div>
+	<span class="next"></span>
+</div>
+</div>
+
+<br>
+<hr></hr>
+<br>
+<script language=>
+function on() {
+	$("body").css("overflow","hidden");
+}
+
+function out(){
+	$("body").css("overflow","auto");
+}
+
+</script>
+    <!-- canvas plasm -->
+<div class="row-fluid">
+<div id="wrapper">
+	<div id="page-wrapper">
+		<div class="span9">
+			<div id="page">
+				<div id="plasm" width="650" height="450" onclick="on()" onMouseOut="out()"></div>
+			</div>
+		</div>
+
+	<div class="span3">
+		<div class="btn-group btn-group-vertical">
+			<div id="menu_button">
+				<ul>
+				
+				<li><button class="btn" href="#">OpenDataBase</button><li>
+				<li><button class="btn" id="cubo">FunctionCube</button><li>
+				<li><button class="btn" href="#">Function3D</button><li>
+				</ul>
+			</div>
+		</div>
+    </div>
+	</div>
+</div>
+</div>
+</div>
+<!-- fine context -->
+
+
+<!-- footer start-->
+<footer class="footer">
+
+	<div class="navbar">
+					
+	   <ul class="nav" id="linkend">
+			<li><a href="project.html?id=project2"><b>Web-Lar</b></a></li>
+			<li><a href="project.html?id=project3"><b>Web-Index</b></a></li>
+							
+							
+	   </ul>
+	</div>
+				
+
+				<div id="footer" class="container">
+				</div>
+			</footer>
+ 
+<!-- footer end-->
+
+
+    </body>
+</section>
+
+<!-- WEB-LAR-->
+
+<section id="project2" style="display:none">
+	<body>
+		<link href="myCss/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="myCss/custom2.css" rel="stylesheet" type="text/css" media="all" />
+
+		<!-- header -->
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Web LAR</a>
+				<ul class="nav">
+					<li class="active"><a href="bihomed.html">Home</a></li>
+					<li><a id="link_about" href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<!-- fine header -->
+
+			<!-- content -->
+
+			<div id="plasm" class="container">
+				<div id="div_plasm"></div>
+				<div id="div_framerate"></div>
+			</div>
+
+			<div class="container">
+				<div class="control-group">
+					<input id="input_file" type="file">
+					<a id="example_01" href="examples/example_01.js" download>example 01</a>
+					<span>-</span>
+					<a id="example_02" href="examples/example_02.js" download>example 02</a>
+					<span>-</span>
+					<a id="example_03" href="examples/example_03.js" download>example 03</a>
+					<span>-</span>
+					<a id="example_04" href="examples/example_04.js" download>example 04</a>
+					<span>-</span>
+					<a id="example_05" href="examples/example_05.js" download>example 05</a>
+					<span>-</span>
+					<a id="example_06" href="examples/example_06.js" download>example 06</a>
+				</div>
+				<div class="control-group">
+					<textarea id="textarea_code"></textarea>
+				</div>
+				<div class="control-group">
+					<button id="button_next" class="btn">next</button>
+					<button id="button_eval" class="btn">eval</button>
+				</div>
+
+			</div>
+
+
+
+			<script src="support/lar/numeric.js"></script>
+			<script src="support/lar/three.js"></script>
+			<script src="support/lar/three-detector.js"></script>
+			<script src="support/lar/three-frame.js"></script>
+			<script src="support/lar/three-stats.js"></script>
+			<script src="support/lar/three-trackball.js"></script>
+			<script src="support/lar/simplexn.js"></script>
+			<script src="support/lar/f.js"></script>
+
+			<script src="support/lar/underscore.js"></script>
+			<script src="support/lar/stick.js"></script>
+
+			<script src="support/lar/bootstrap.js"></script>
+
+			<script src="support/lar/emitter.js"></script>
+			<script src="support/lar/reader.js"></script>
+			<script src="support/lar/file.js"></script>
+
+			<script src="lib/plasm.js"></script>
+			<script src="lib/plasm-fun.js"></script>
+			<script src="lib/lar.js"></script>
+
+			<script src="index.js"></script>
+
+			<!-- chiudo il content -->
+
+			<!-- footer -->
+			<footer class="footer">
+
+				<div class="navbar">
+					<div class="navbar-inner">
+						<ul class="nav">
+							<li><a href="project.html?id=project1">Web-Dicom</a></li>
+							<li><a href="project.html?id=project3">Web-Index</a></li>
+							
+							<li><a href="bihomed.html">Back</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="footer" class="container">
+				</div>
+			</footer>
+		</body>
+	</section>
+
+<!-- WEB-INDEX-->
+
+	<section id="project3" style="display:none">Project 3</section>
+
+	<footer>
+	</footer>
+
+
+</body>
+</html>
