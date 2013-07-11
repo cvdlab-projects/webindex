@@ -23,12 +23,11 @@
 function retrieveCluster() {
 
 
-    var idCluster = retriveIdCluster()+" ";
-    console.log(idCluster + "  " + typeof (idCluster))
-    
+    var idCluster = retriveIdCluster();
+
      $(function () {
         $.ajax({ 
-            url: 'http://localhost:28017/ilariomaiolodb/documents/?filter_id=' + idCluster,
+            url: 'http://localhost:28017/ilariomaiolodb/documents/?filter_id=0',
             type: 'get',
             dataType: 'jsonp',
             jsonp: 'jsonp', // mongod is expecting the parameter name to be called "jsonp"
