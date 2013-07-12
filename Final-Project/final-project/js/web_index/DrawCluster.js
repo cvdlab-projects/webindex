@@ -27,7 +27,7 @@ function retrieveCluster() {
 
      $(function () {
         $.ajax({ 
-            url: 'http://localhost:28017/ilariomaiolodb/documents/?filter_id=0',
+            url: 'http://localhost:28017/ilariomaiolodb/documents/?filter_id='+idCluster,
             type: 'get',
             dataType: 'jsonp',
             jsonp: 'jsonp', // mongod is expecting the parameter name to be called "jsonp"
