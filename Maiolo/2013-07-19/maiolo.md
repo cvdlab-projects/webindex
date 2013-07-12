@@ -92,6 +92,12 @@
 
 - - -
 
+###Tree Representation
+
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/result1.JPG)	
+
+- - -
+
 ##Function:
 	
     function createTree(clustersTree, dimension, description, id, name) {
@@ -291,6 +297,12 @@
 	In this step i have developed some function that show the CLUSTER ID using a jquery plugin "SimpleTip"
 
 - - -
+
+##Tooltip:
+
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-07-19/tooltip.JPG)	
+
+- - - 
 ##Function:
 	function addTip(node, tip) {
 		$(node).mouseenter(function () {
@@ -317,15 +329,11 @@
 - - -
 ##Screenshot of result:
 
-###Tree Representation
 
-![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-04-18/result1.JPG)	
 
 ###Cluster:
 
 ![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-07-19/cluster.JPG)	
 
-##Tooltip:
 
-![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-07-19/tooltip.JPG)	
 
