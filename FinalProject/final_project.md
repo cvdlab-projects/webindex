@@ -153,7 +153,7 @@ Notes:
 
 ##Second task: The partitioner
 Precondition:
-* After the extraction, the points of the model are saved in a file and re-writed for optimization (see Sara Vagnarelli's [page](https://github.com/cvdlab-bio/webindex/blob/vagnarelli_dev_branch/README.md)).
+* After the extraction, the points of the model are saved in a file and re-writed for optimization (see Sara Vagnarelli's [page](https://github.com/cvdlab-bio/webindex/blob/vagnarelli_dev_branch/slides/presentazione%20biomedica.md)).
 * A row of a slice represents only the x-coordinate of a point
 
 Input:
