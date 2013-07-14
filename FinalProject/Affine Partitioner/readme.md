@@ -36,7 +36,7 @@ It uses some global buffer. One for any cluster and it makes sure to empty it (w
 For each depth level, the partitioner choose 4 points from the cluster an generate a Trasformation Matrix with it.
 
 
-Below we can find the flow diagrams of some of the most important methods of the partitioner.
+Below we can see the flow diagrams of some of the most important methods of the partitioner.
 
 ##getStart()
 Creates an identity matrix and use it how TMatrixTotal.
