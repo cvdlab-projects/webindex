@@ -40,7 +40,8 @@ For each depth level, the partitioner choose 4 points from the cluster an genera
 
 
 ![getStart](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/getStart.png)
-
+![processFile](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/processFile.png)
+![processChunk](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/processChunk.png)
 
 
 High level algorithm:
