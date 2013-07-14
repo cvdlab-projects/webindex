@@ -34,7 +34,8 @@ ________________________________________________________________________________
 
 ### Lavoro individuale  
  
-*Ottimizzazione codice, server Python 
+*Ottimizzazione codice
+*server Python 
 
 
 ____________________________________________________________________________________________________________________
@@ -47,16 +48,15 @@ ________________________________________________________________________________
 
 
 
-* ottimizzazione codice per la rappresentazione dei punti 3D ricevuti in input.
+#### -ottimizzazione codice per la rappresentazione dei punti 3D ricevuti in input.
 
 
 
-* implementazione server web in Python
+#### -implementazione server web in Python
 
   /localhost:8080/webIndex/query?x=0.5&y=0.7/
-   Es.
-   input:   prende un modello, coordinate dei punti n-dimensioni
-   output:  idCluster
+ 
+  
 
 
 _______________________________________________________________________________________________________________________
@@ -73,7 +73,8 @@ ________________________________________________________________________________
 
 
 
-1. **OTTIMIZZAZIONE DEL CODICE**
+
+## 1. **OTTIMIZZAZIONE DEL CODICE**
 
 **prima ottimizzazione "cleaner.py"**
 
@@ -219,7 +220,7 @@ ________________________________________________________________________________
     
 **esempio di input sottoposto al cleaner**
 
-![schema funzionale](SchemaIO1.png "schema funzionale")
+![schema funzionale](SchemaIO1.png "boneclean")
 
 
 
@@ -228,7 +229,7 @@ ________________________________________________________________________________
 
 
 
-2. **OTTIMIZZAZIONE DEL CODICE**
+
 
 **seconda ottimizzazione "cptimizer.py"**
 
@@ -271,7 +272,11 @@ ________________________________________________________________________________
 
 
 
+![schema funzionale](SchemaIO1.png "statistiche")
 
+
+
+## 2. **SERVER WEB IN PYTHON**
 
 
 
