@@ -332,9 +332,9 @@ ________________________________________________________________________________
 
     - number of points
 
-    space 3D: 800 * 800 * 1024   = 655.360.000
+    space 3D: 800 * 800 * 1024      = 655.360.000
     original model 	            	= 87.883.292 (circa 13%)   	circa 40 minuti		640MB		  
-    cleaned model		             	= 13.489.345 (circa 2%)     circa 7 minuti	  640MB
+    cleaned model		            = 13.489.345 (circa 2%)     circa 7 minuti	  640MB
     optimized model		            = 13.489.345 	             	circa 2 minuti	  50MB
 
     
