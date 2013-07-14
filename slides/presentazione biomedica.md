@@ -137,7 +137,8 @@ ________________________________________________________________________________
      return slice
 
 
-    '''dice quale slice stai guardando..devo saltare ilcommento neklla lettura'''
+'''dice quale slice stai guardando..devo saltare ilcommento nella lettura'''
+  
     def writeSlice(output, slice, id):
      output.write('# New slice (' + str(id) + ')\n')
      for y in range(HEIGHT):
@@ -160,7 +161,9 @@ ________________________________________________________________________________
     output = open(DESTINATION, 'w')
 
 
-    '''divido il cubo in slice e ne prendo tre per volta, quella sopra e l'ultima le devo tenere.'''
+'''divido il cubo in slice e ne prendo tre per volta, quella sopra e l'ultima le devo tenere.'''
+
+
 
 
     down = loadSlice(input)
@@ -184,7 +187,13 @@ ________________________________________________________________________________
      writeSlice(output, clean(down, middle, up), z)
      print "clean", z
 
-    '''sono arrivata all'ultima prendi up che nn devi ottimizzare e la scrivi
+    
+    
+'''sono arrivata all'ultima prendi up che nn devi ottimizzare e la scrivi
+    
+    
+    
+    
     writeSlice(output, up, DEPTH-1)
     addPoints(up)
     print "clean 1023"
