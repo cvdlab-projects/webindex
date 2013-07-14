@@ -213,4 +213,68 @@ ________________________________________________________________________________
     print "FINISH!"
     
     
+    
+    
+    
+    
+**esempio di input sottoposto al cleaner**
+
+![schema funzionale](SchemaIO1.png "schema funzionale")
+
+
+
+
+
+
+
+
+2. **OTTIMIZZAZIONE DEL CODICE**
+
+**seconda ottimizzazione "cptimizer.py"**
+
+
+
+
+'''riformatto file per occupare meno memoria..memorizzo solo le coordinate degli uni'''
+    from time import time
+
+    WIDTH = 800
+    HEIGHT = 800
+    DEPTH = 1024
+    SOURCE = 'bone_clean.txt'
+    DESTINATION = 'bone_op.txt'
+
+    start_time = time()
+    input = open(SOURCE, 'r')
+    output = open(DESTINATION, 'w')
+    points = 0
+
+    for z in range(DEPTH):
+     output.write(input.readline())
+     for y in range(HEIGHT):
+        input_row = input.readline()
+        output_row = ""
+        for x in range(WIDTH):
+            if (input_row[x] == '1'):
+                output_row += str(x) + " "
+                points += 1
+        output.write(output_row[:len(output_row)-1] + "\n")
+
+    execution_time = time() - start_time
+    if (execution_time >= 60):
+      print "\nTime: ", "%02d" % (execution_time/60), ".", "%02d" % (execution_time%60), " m"
+    else:
+      print "\nTime: ", "%02d" % (execution_time), " s"
+    print "number of points:", points
+
+
+
+
+
+
+
+
+
+
+    
 ***
