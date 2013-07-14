@@ -26,8 +26,9 @@ ________________________________________________________________________________
 ## TARGETS
 
  
-*Optimization of the code
-*server Python 
+-Optimization of the code
+
+-server Python 
 
 
 ____________________________________________________________________________________________________________________
@@ -36,7 +37,7 @@ ________________________________________________________________________________
 
 
 
-## REALIZZATION
+## REALIZATION
 
 
 
@@ -129,7 +130,7 @@ ________________________________________________________________________________
      return slice
 
 
-'''this is to know which slide you are watching..you must skip the comment on the reading'''
+'''in order to know which slide is..you must skip the comment on the reading'''
   
     def writeSlice(output, slice, id):
      output.write('# New slice (' + str(id) + ')\n')
@@ -153,7 +154,7 @@ ________________________________________________________________________________
     output = open(DESTINATION, 'w')
 
 
-'''split the cube in slices and take three slice at time. Keep the highest and the lowest.'''
+'''split the cube into slices and take three slices at time. Keep the highest and the lowest.'''
 
 
 
@@ -181,7 +182,7 @@ ________________________________________________________________________________
 
     
     
-'''we've reached the last one , take up that you don't have to optimize and write it.
+'''we've reached the last one , take "up" that you don't have to optimize and write it.
     
     
     
@@ -284,12 +285,13 @@ ________________________________________________________________________________
 
 
 
-**second optimization with "cptimizer.py"**
+**second optimization with "optimizer.py"**
 
 
 
 
-'''reformat the file so that it can take less memory.. saving only the positions of the "1"'''
+'''reformat the file so that it can take less memory.. saving only the positions of the "1" '''
+
     from time import time
 
     WIDTH = 800
@@ -339,7 +341,7 @@ ________________________________________________________________________________
 
 
 
-## 2. **SERVER WEB WITH PYTHON**
+### 2. **SERVER WEB WITH PYTHON**
 
 
 
