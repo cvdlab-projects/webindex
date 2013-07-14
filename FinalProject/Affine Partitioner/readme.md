@@ -36,7 +36,7 @@ It uses some global buffer. One for any cluster and it makes sure to empty it (w
 For each depth level, the partitioner choose 4 points from the cluster an generate a Trasformation Matrix with it.
 
 
-<img src="https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/getStart.png" alt="getStart" style="width: 90px;"/>
+<img src="https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/getStart.png" alt="getStart" style="width: 40px;"/>
 
 
 ![getStart](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/getStart.png)
