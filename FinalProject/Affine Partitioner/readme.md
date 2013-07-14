@@ -39,17 +39,20 @@ For each depth level, the partitioner choose 4 points from the cluster an genera
 Below we can find the flow diagrams of some of the most important methods of the partitioner.
 
 ##getStart()
+Creates an identity matrix and use it how TMatrixTotal.
+gets the model tree from the method processFile and saves it.
 ![getStart](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/getStart.png)
 
 ##processFile(...)
+processFile is a recursive method. it returns the branch of tree that it analyzes.
 ![processFile](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/processFile.png)
 
 #processChunk(...)
+parse the chunk of data, applies the TMatrix to all point and call the savePoint method for each point.
 ![processChunk](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/processChunk.png)
 
 
 
 
-Notes:
-* The model-tree is created at the beginning of the algorithm and updated at the cluster creation
+
 
