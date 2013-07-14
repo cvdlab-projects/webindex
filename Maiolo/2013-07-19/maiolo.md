@@ -83,6 +83,10 @@
 
 - - -
 
+![ScreenShot](https://raw.github.com/cvdlab-bio/webindex/maiolo_dev_branch/Maiolo/2013-07-19/ajaxResult.JPG)	
+
+
+- - - 
 #Solution Second Step:
 	
 	1)Create a tree representation of an image using javascript.
