@@ -47,7 +47,7 @@ gets the model tree from the method processFile and saves it.
 processFile is a recursive method. it returns the branch of tree that it analyzes.
 ![processFile](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/processFile.png)
 
-#processChunk(...)
+##processChunk(...)
 parse the chunk of data, applies the TMatrix to all point and call the savePoint method for each point.
 ![processChunk](https://raw.github.com/cvdlab-bio/webindex/pisanu_dev_branch/FinalProject/Affine%20Partitioner/processChunk.png)
 
