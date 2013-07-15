@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WebVisual</title>
+
+	<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>	
+	
+</head>
+<body id="weblar">
+	<link href="styles/Web-lar/bootstrap2.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="styles/Web-lar/custom2.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/web_lar/webLar-env.js"></script>	
+	<!-- header web-lar -->
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a>Web - LAR</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="bihomed.html?#home"  title="home">Home</a></li>
+					<li><a id="weblar-link-about" href="#">About</a></li>
+					<li><a id="weblar-link-contact" href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- fine header -->
+
+	<!-- content -->
+
+	<div id="weblar-container-about-wrapper">
+		<div id="weblar-container-about" class="weblar-container">
+			<div>
+				<div id="weblar-logo"><span>Web-LAR</span></div>
+			</div>
+			<div id="weblar-icon-close" class="icon-close"></div>
+			<div id="weblar-copyright">
+				<p> Web-index is a web application created by a group of students from Roma Tre University</p>
+				<p> Students Group :</p><ul type="disc"><li>Andrea Somma</li><li>Elisa Lamberti</li><li>Fabio Cumbo</li>
+				<li>Fabrizio Rebecca</li><li>Luca Menichetti</li><li>Oscar Eijsermans</li></ul></p></br>
+				<p> Project: </p><ul type="disc"><li>Extension of the LAR.js and LAR-DEMO.js projects with convex cells</li>
+				<li>Integration of the matrix computation web-service</li>
+				<li>Integration of PDB visualization service</li></ul></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="weblar-container-about-wrapper">
+		<div id="weblar-container-contact" class="weblar-container">
+			<div>
+				<div id="weblar-logo"><span>Web-LAR contact</span></div>
+			</div>
+			<div id="weblar-icon-contact-close" class="icon-close"></div>
+			<div id="weblar-copyright">
+				<p> Web page designer:</p></br><p>Antonello Gatto email : antonello.gatto@gmail.com</p></br>
+				<p> Function developers:</p></br><p> Altre email</p></br>
+			</div>
+		</div>
+	</div>
+
+	<div id="plasm" class="container">
+		<div id="div_plasm"></div>
+	</div>
+	<br>
+	<div class="container-fluid">
+		<div class="control-group">
+
+			<input  id="input_file" type="file"/>
+			<!--<input type="button" value="Carica ..." id="btn"/> -->
+
+			<a id="example_01" href="examples/example_01.js" download>example 01</a>
+			<span>-</span>
+			<a id="example_02" href="examples/example_02.js" download>example 02</a>
+			<span>-</span>
+			<a id="example_03" href="examples/example_03.js" download>example 03</a>
+			<span>-</span>
+			<a id="example_04" href="examples/example_04.js" download>example 04</a>
+			<span>-</span>
+			<a id="example_05" href="examples/example_05.js" download>example 05</a>
+			<span>-</span>
+			<a id="example_06" href="examples/example_06.js" download>example 06</a>
+			<div id="div_framerate" style="float:right"></div>
+		</div>
+		<br>
+		<div class="control-group">
+			<textarea id="textarea_code" rows="5"></textarea>
+		</div>
+		<div class="control-group" style="float:left">
+			<button id="button_next" class="btn">next</button>
+			<button id="button_eval" class="btn">eval</button>
+		</div>
+	</div>
+
+	<script src="support/lar/numeric.js"></script>
+	<script src="support/lar/three.js"></script>
+	<script src="support/lar/three-detector.js"></script>
+	<script src="support/lar/three-frame.js"></script>
+	<script src="support/lar/three-stats.js"></script>
+	<script src="support/lar/three-trackball.js"></script>
+	<script src="support/lar/simplexn.js"></script>
+	<script src="support/lar/f.js"></script>
+
+	<script src="support/lar/underscore.js"></script>
+	<script src="support/lar/stick.js"></script>
+
+	<script src="support/lar/bootstrap.js"></script>
+
+	<script src="support/lar/emitter.js"></script>
+	<script src="support/lar/reader.js"></script>
+	<script src="support/lar/file.js"></script>
+
+	<script src="lib/plasm.js"></script>
+	<script src="lib/plasm-fun.js"></script>
+	<script src="lib/lar.js"></script>
+	
+	<script src="index.js"></script>
+
+	<script src="js/console/codemirror.js"></script>
+	<script src="js/console/console_script.js"></script>
+
+	<!--Javascript and coffeescript modes-->
+	<script src="js/console/javascript.js"></script>
+	<script src="js/console/coffeescript.js"></script>
+	<script src="js/console/loadmode.js"></script>
+
+	<!--Hint-->
+	<script src="js/console/show-hint.js"></script>
+	<script src="js/console/javascript-hint.js"></script>
+
+	<link rel="stylesheet" href="styles/console/codemirror.css">
+	<link rel="stylesheet" href="styles/console/console.css">
+	<link rel="stylesheet" href="styles/console/show-hint.css">
+	<!--
+	<script>
+	$('#btn').click(function(){
+		$('#input_file').style.onclick();
+	});​</script> -->
+
+	<!-- chiudo il content -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div style="float:left">
+			<input id="showConsole" type="button" value="OpenConsole" onclick="toggleConsole();" >
+		</div>
+		<div id="menu">
+			<ul class="nav">
+				<li><a href="Web-dicom.html">Web-Dicom</a></li>
+				<li><a href="Web-index.html">Web-Index</a></li>
+				<li><a href="http://cvdlab-bio.github.io/webmol/">Web-Mol</a></li>
+				<li><a href="bihomed.html">Back</a></li>
+			</ul>
+		</div>
+		<div id="consl" style="display:none">  
+			<form><textarea id="code" name="code" >
+				//Write Here
+			</textarea></form>
+
+			<input id="exec" type="button" value="Exec" onclick="exec();"/>
+			<input id="coffeeScriptButton" type="button" value="CoffeeScript" onclick="coffeeMode();"/>
+			<input id="javaScriptButton" type="button" value="JavaScript" style="display:none" onclick="javascriptMode();">
+			<input id="undo" type="button" value="Undo" onclick=""/>
+			<input id="verify" type="button" value="Verify" onclick="test();"/>
+		</div>
+
+
+
+		<script>
+		/*Testing var*/
+		var csb = document.getElementById("coffeeScriptButton");
+		var jsb = document.getElementById("javaScriptButton");
+
+		/*Loading CodeMirror on existing textArea*/
+
+		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+			mode: "javascript",
+			lineNumbers: true,
+                extraKeys: {"Cmd-Space": "autocomplete"},   //extrakey for autocomplete
+                tabMode: "indent"                           
+            });
+
+		</script>
+
+		<div id="footer" class="container"></div>
+	</footer>
+</body>
+</html>

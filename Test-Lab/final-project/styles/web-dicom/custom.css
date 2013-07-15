@@ -1,0 +1,37 @@
+
+#footer {
+	height: 50px;
+	background-color: #3A5896;
+        text-align: center;
+	width: 1286px
+
+} 
+
+
+
+
+.navbar{
+        width: 1286px
+	color: #4b4b4b;
+}
+
+#page{
+
+	width: 620px;
+	height: 671px;
+	
+}
+
+#plasm{
+		float: left;
+		width: 98%;
+		margin-left: 1%;
+		margin-top: 1%;
+		height:500px;
+	}
+
+
+
+#linkend{
+	margin-left:200px;
+}
