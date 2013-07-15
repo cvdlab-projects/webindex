@@ -154,7 +154,7 @@ ________________________________________________________________________________
     input = open(SOURCE, 'r')
     output = open(DESTINATION, 'w')
 
-
+'''BEGIN'''
 '''split the cube into slices and take three slices at time. Keep the highest and the lowest.'''
 
 
@@ -163,17 +163,24 @@ ________________________________________________________________________________
     down = loadSlice(input)
     middle = loadSlice(input)
     up = loadSlice(input)
+    
+    '''start with the last slide and write it   0=z   '''
+    
     writeSlice(output, down, 0)
-    '''quanti punti ho in una slice'''
+    
+    '''how many points per slice'''
+    
     addPoints(down)
     print "clean 0"
-    '''cancella i punti inerni nella middle
+    
+    '''delete (writing 0)the points in the middle if the neighbors are 1, and itself is 1'''
 
-    '''scrive solo middle'''
+    
     writeSlice(output, clean(down, middle, up), 1)
     print "clean 1"
 
-    '''carico le nuove slice'''
+    '''load new slices , bottom-up'''
+    
     for z in range(2, DEPTH-1):
      down = middle
      middle = up
@@ -306,6 +313,7 @@ ________________________________________________________________________________
     output = open(DESTINATION, 'w')
     points = 0
 
+    '''for each slice, for each row ,for each column if there is a "1" save the position'''
     for z in range(DEPTH):
      output.write(input.readline())
      for y in range(HEIGHT):
