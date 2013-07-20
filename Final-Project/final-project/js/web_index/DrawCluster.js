@@ -20,10 +20,10 @@
 
 
 
-function retrieveCluster() {
+function retrieveCluster(id) {
 
 
-    var idCluster = parseInt(retriveIdCluster(), 8);
+    var idCluster = parseInt(id, 8);
 
      $(function () {
         $.ajax({ 
